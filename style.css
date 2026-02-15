@@ -2282,9 +2282,11 @@ select option {
 
     .nav-toggle {
         margin-left: auto;
-        /* Push hamburger to the right */
         display: flex !important;
-        /* Ensure flex display on mobile */
+        position: relative;
+        z-index: 9999;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 
     /* STRICT VISIBILITY TOGGLE */
@@ -2302,5 +2304,11 @@ select option {
 
     .nav-toggle.active .close-icon {
         display: block !important;
+    }
+
+    /* Ensure icon is visible against any background */
+    .nav-icon {
+        stroke: #ffffff !important;
+        filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
     }
 }
