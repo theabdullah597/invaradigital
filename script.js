@@ -3,21 +3,29 @@
  * Multi-page website functionality
  */
 
-document.addEventListener('DOMContentLoaded', function() {
-    
+document.addEventListener('DOMContentLoaded', function () {
+
     // ==========================================
     // MOBILE NAVIGATION
     // ==========================================
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
-    
+
     if (navToggle && navMenu) {
-        navToggle.addEventListener('click', function() {
+        navToggle.addEventListener('click', function () {
             this.classList.toggle('active');
             navMenu.classList.toggle('active');
             document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+
+            // Explicitly toggle icons if they exist inline
+            const menuIcon = this.querySelector('.menu-icon');
+            const closeIcon = this.querySelector('.close-icon');
+            if (menuIcon && closeIcon) {
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            }
         });
-        
+
         // Close menu on link click
         navMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
@@ -33,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     const navbar = document.getElementById('navbar');
     if (navbar) {
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
@@ -97,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function drawConnections() {
             const maxDistance = 100;
-            
+
             for (let i = 0; i < particles.length; i++) {
                 let connections = 0;
                 for (let j = i + 1; j < particles.length; j++) {
@@ -121,14 +129,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function animate() {
             if (!isActive) return;
-            
+
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
+
             particles.forEach(particle => {
                 particle.update();
                 particle.draw();
             });
-            
+
             drawConnections();
             animationId = requestAnimationFrame(animate);
         }
@@ -153,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // BUTTON RIPPLE EFFECT
     // ==========================================
     document.querySelectorAll('.btn-ripple').forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             const rect = this.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
@@ -212,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ANIMATED COUNTERS
     // ==========================================
     const counters = document.querySelectorAll('.stat-number[data-target]');
-    
+
     const counterObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -255,12 +263,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const caseCards = document.querySelectorAll('.cases-grid .case-card');
 
     filterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             const filter = this.getAttribute('data-filter');
-            
+
             filterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-            
+
             caseCards.forEach(card => {
                 if (filter === 'all' || card.getAttribute('data-category') === filter) {
                     card.style.display = 'block';
@@ -286,12 +294,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const resourceCards = document.querySelectorAll('.resources-grid .resource-card');
 
     resourceFilterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             const filter = this.getAttribute('data-filter');
-            
+
             resourceFilterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-            
+
             resourceCards.forEach(card => {
                 if (filter === 'all' || card.getAttribute('data-category') === filter) {
                     card.style.display = 'block';
@@ -327,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'iso': 'ISO 27001 Consulting',
                 'managed': 'Managed Security Services'
             };
-            
+
             if (options[serviceParam]) {
                 for (let i = 0; i < serviceSelect.options.length; i++) {
                     if (serviceSelect.options[i].value === options[serviceParam]) {
@@ -338,9 +346,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        contactForm.addEventListener('submit', async function(e) {
+        contactForm.addEventListener('submit', async function (e) {
             e.preventDefault();
-            
+
             const submitBtn = document.getElementById('submitBtn');
             const statusMsg = document.getElementById('formStatus');
             const formData = new FormData(this);
@@ -348,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Reset status
             statusMsg.className = 'form-status';
             statusMsg.textContent = '';
-            
+
             // Loading state
             if (submitBtn) {
                 submitBtn.classList.add('loading');
@@ -393,7 +401,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // SMOOTH SCROLL FOR ANCHOR LINKS
     // ==========================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {

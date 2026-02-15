@@ -226,39 +226,13 @@ img {
     display: none;
 }
 
+/* Mobile Nav Toggle - SVG Styles in Media Query */
 .nav-toggle {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
-}
-
-.hamburger {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--white);
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    background: var(--white);
-    transition: all 0.3s ease;
-}
-
-.hamburger::before {
-    top: -8px;
-}
-
-.hamburger::after {
-    top: 8px;
 }
 
 /* Hero Section */
@@ -1847,14 +1821,16 @@ img {
 
     /* Ensure nav toggle is vertically centered */
     .nav-toggle {
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: center;
-        padding: 0.5rem;
+        padding: 0;
         margin: 0;
         height: 40px;
         /* Explicit height */
         width: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
     }
 
     .contact-grid,
@@ -2307,5 +2283,24 @@ select option {
     .nav-toggle {
         margin-left: auto;
         /* Push hamburger to the right */
+        display: flex !important;
+        /* Ensure flex display on mobile */
+    }
+
+    /* STRICT VISIBILITY TOGGLE */
+    .nav-toggle .menu-icon {
+        display: block !important;
+    }
+
+    .nav-toggle .close-icon {
+        display: none !important;
+    }
+
+    .nav-toggle.active .menu-icon {
+        display: none !important;
+    }
+
+    .nav-toggle.active .close-icon {
+        display: block !important;
     }
 }
