@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Invara Digital - Enterprise-grade cyber security solutions for UK businesses. Penetration testing, ISO 27001 consulting, and 24/7 managed security services.">
+    <meta name="keywords"
+        content="cyber security UK, penetration testing, ISO 27001, Cyber Essentials, vulnerability assessment, managed security services, Edinburgh cyber security">
+    <title>Invara Digital | UK Cyber Security Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.svg" alt="Invara Digital Logo">
+                <span class="logo-text">Invara Digital</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="nav-link">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#pentest">Penetration Testing</a></li>
+                        <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                        <li><a href="services.html#cyberessentials">Cyber Essentials</a></li>
+                        <li><a href="services.html#iso27001">ISO 27001</a></li>
+                        <li><a href="services.html#managed">Managed Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="grid-overlay"></div>
+            <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                UK-Based Cyber Security Experts
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Protecting UK Businesses</span>
+                <span class="title-line">from Advanced Cyber Threats</span>
+            </h1>
+            <p class="hero-subtitle">
+                Enterprise-grade cyber security solutions built for compliance, resilience, and long-term protection.
+                Trusted by UK SMEs, fintechs, and mid-sized enterprises.
+            </p>
+            <div class="hero-cta">
+                <a href="contact.html" class="btn btn-primary btn-ripple">
+                    <span>Book Free Security Consultation</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="services.html" class="btn btn-secondary">Explore Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>+
+                    <span class="stat-label">UK Businesses Protected</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="99.9">0</span>%
+                    <span class="stat-label">Uptime Guaranteed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="24">0</span>/7
+                    <span class="stat-label">Security Monitoring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-label">Trusted by leading UK organisations</p>
+            <div class="trusted-logos">
+                <div class="trusted-logo">Finance Corp</div>
+                <div class="trusted-logo">HealthTrust</div>
+                <div class="trusted-logo">TechStart</div>
+                <div class="trusted-logo">Legal Partners</div>
+                <div class="trusted-logo">Retail Plus</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Comprehensive Security Solutions</h2>
+                <p class="section-subtitle">From penetration testing to compliance certification, we protect your
+                    business at every level.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4v40M4 24h40M12 12l24 24M36 12L12 36" />
+                            <circle cx="24" cy="24" r="8" />
+                        </svg>
+                    </div>
+                    <h3>Penetration Testing</h3>
+                    <p>Identify vulnerabilities before attackers do with our CREST-aligned testing methodologies.</p>
+                    <a href="services.html#pentest" class="card-link">Learn more →</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="8" width="32" height="32" rx="4" />
+                            <path d="M16 24l6 6 12-12" />
+                        </svg>
+                    </div>
+                    <h3>Cyber Essentials</h3>
+                    <p>Achieve UK government-backed certification with our complete support and guidance.</p>
+                    <a href="services.html#cyberessentials" class="card-link">Learn more →</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="20" />
+                            <path d="M24 12v12l8 8" />
+                        </svg>
+                    </div>
+                    <h3>ISO 27001 Consulting</h3>
+                    <p>Implement international information security standards with our expert consultants.</p>
+                    <a href="services.html#iso27001" class="card-link">Learn more →</a>
+                </article>
+            </div>
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-outline">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Invara Digital</span>
+                <h2 class="section-title">The UK's Trusted Security Partner</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4v40M4 24h40" />
+                            <circle cx="24" cy="24" r="12" />
+                        </svg>
+                    </div>
+                    <h3>24/7 Monitoring</h3>
+                    <p>Round-the-clock security operations centre ensuring continuous threat detection and rapid
+                        response.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4L6 12v12c0 11.1 7.7 21.5 18 24 10.3-2.5 18-12.9 18-24V12L24 4z" />
+                        </svg>
+                    </div>
+                    <h3>100% UK Based</h3>
+                    <p>Edinburgh headquarters with all data remaining on UK soil. No offshore outsourcing.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="8" width="32" height="32" rx="4" />
+                            <path d="M16 24l6 6 12-12" />
+                        </svg>
+                    </div>
+                    <h3>Compliance Driven</h3>
+                    <p>Deep expertise in UK GDPR, Cyber Essentials, ISO 27001, and sector-specific regulations.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="20" />
+                            <path d="M24 12v12l8 8" />
+                        </svg>
+                    </div>
+                    <h3>Certified Experts</h3>
+                    <p>Team holds CISSP, CISM, CREST, and ISO 27001 Lead Auditor certifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Preview -->
+    <section class="case-studies-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Stories</span>
+                <h2 class="section-title">Recent Client Success</h2>
+            </div>
+            <div class="case-grid">
+                <article class="case-card">
+                    <img src="images/placeholder-fintech.svg" alt="Fintech Security" class="case-image">
+                    <div class="case-content">
+                        <h3>Securing a £50M Fintech Launch</h3>
+                        <p>Complete security infrastructure for a new digital banking platform, achieving FCA compliance
+                            in 8 weeks.</p>
+                        <a href="case-studies.html" class="case-link">Read case study →</a>
+                    </div>
+                </article>
+                <article class="case-card">
+                    <img src="images/placeholder-healthcare.svg" alt="Healthcare Data Protection" class="case-image">
+                    <div class="case-content">
+                        <h3>NHS Data Protection Overhaul</h3>
+                        <p>ISO 27001 implementation for a multi-site healthcare provider, ensuring patient data
+                            security.</p>
+                        <a href="case-studies.html" class="case-link">Read case study →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Ready to secure your business?</h2>
+                <p>Book a free, no-obligation security consultation with our experts.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Schedule Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.svg" alt="Invara Digital Logo">
+                        <span class="logo-text">Invara Digital</span>
+                    </a>
+                    <p class="footer-tagline">Enterprise-grade cyber security for UK businesses.</p>
+                    <div class="footer-address">
+                        <strong>Headquarters</strong>
+                        <address>
+                            5 South Charlotte Street<br>
+                            Edinburgh, EH2 4AN<br>
+                            United Kingdom
+                        </address>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#pentest">Penetration Testing</a></li>
+                        <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                        <li><a href="services.html#cyberessentials">Cyber Essentials</a></li>
+                        <li><a href="services.html#iso27001">ISO 27001</a></li>
+                        <li><a href="services.html#managed">Managed Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2026 Invara Digital Ltd. All rights reserved.
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">ISO 27001</span>
+                    <span class="badge">NCSC Cyber Advisor</span>
+                    <span class="badge">IASME Partner</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

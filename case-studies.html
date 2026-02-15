@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Case studies from Invara Digital - See how we've helped UK businesses improve their cyber security posture.">
+    <title>Case Studies | Invara Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.svg" alt="Invara Digital Logo">
+                <span class="logo-text">Invara Digital</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="nav-link">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#pentest">Penetration Testing</a></li>
+                        <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                        <li><a href="services.html#cyberessentials">Cyber Essentials</a></li>
+                        <li><a href="services.html#iso27001">ISO 27001</a></li>
+                        <li><a href="services.html#managed">Managed Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="case-studies.html" class="nav-link active">Case Studies</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">Success Stories</span>
+            <h1>Client Case Studies</h1>
+            <p>Real results from real UK businesses we've helped protect</p>
+        </div>
+    </section>
+
+    <!-- Featured Case Study -->
+    <section class="featured-case">
+        <div class="container">
+            <div class="featured-grid">
+                <div class="featured-content">
+                    <span class="case-badge large">Fintech</span>
+                    <h2>Securing a £50M Digital Banking Launch</h2>
+                    <p class="lead">A new UK fintech startup needed enterprise-grade security to satisfy FCA
+                        requirements and protect sensitive customer data ahead of their public launch.</p>
+
+                    <div class="challenge-solution">
+                        <div class="cs-box">
+                            <h4>The Challenge</h4>
+                            <p>The client had 8 weeks until launch but lacked any formal security programme. They needed
+                                FCA compliance, penetration testing, and 24/7 monitoring—fast.</p>
+                        </div>
+                        <div class="cs-box">
+                            <h4>Our Solution</h4>
+                            <p>We implemented a complete security infrastructure including ISO 27001-aligned ISMS, CREST
+                                penetration testing, and 24/7 SOC monitoring with custom alerting.</p>
+                        </div>
+                    </div>
+
+                    <div class="results">
+                        <h4>Results</h4>
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <span class="result-number">8 weeks</span>
+                                <span class="result-label">To full compliance</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-number">0</span>
+                                <span class="result-label">Critical vulnerabilities at launch</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-number">FCA</span>
+                                <span class="result-label">Authorisation granted</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <blockquote>
+                        "Invara Digital's expertise was instrumental in our successful FCA application. Their pragmatic
+                        approach meant we met our launch deadline without compromising on security."
+                        <cite>— CTO, Digital Bank</cite>
+                    </blockquote>
+                </div>
+                <div class="featured-image">
+                    <div class="case-visual">
+                        <div class="visual-stats">
+                            <div class="v-stat">
+                                <span>100%</span>
+                                <small>Compliance</small>
+                            </div>
+                            <div class="v-stat">
+                                <span>£50M</span>
+                                <small>Protected</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="cases-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">More Success Stories</span>
+                <h2 class="section-title">Browse by Industry</h2>
+            </div>
+
+            <div class="cases-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="finance">Finance</button>
+                <button class="filter-btn" data-filter="retail">Retail</button>
+                <button class="filter-btn" data-filter="manufacturing">Manufacturing</button>
+            </div>
+
+            <div class="cases-grid">
+                <article class="case-card" data-category="healthcare">
+                    <img src="images/placeholder-healthcare.svg" alt="Healthcare Security" class="case-image">
+                    <div class="case-content">
+                        <h3>NHS Trust Data Protection Overhaul</h3>
+                        <p>ISO 27001 implementation for a multi-site NHS trust, ensuring patient data security and NHS
+                            Digital compliance.</p>
+                        <div class="case-meta">
+                            <span>Services: ISO 27001, Penetration Testing</span>
+                            <span>Duration: 10 months</span>
+                        </div>
+                        <a href="#" class="case-link">Read full case study →</a>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="retail">
+                    <img src="images/placeholder-retail.svg" alt="Retail Security" class="case-image">
+                    <div class="case-content">
+                        <h3>E-commerce Platform Security</h3>
+                        <p>PCI DSS compliance and penetration testing for a £100M+ annual turnover online retailer ahead
+                            of Black Friday.</p>
+                        <div class="case-meta">
+                            <span>Services: PCI DSS, Penetration Testing</span>
+                            <span>Duration: 6 weeks</span>
+                        </div>
+                        <a href="#" class="case-link">Read full case study →</a>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="finance">
+                    <img src="images/placeholder-fintech.svg" alt="Finance Security" class="case-image">
+                    <div class="case-content">
+                        <h3>Wealth Manager Cyber Essentials Plus</h3>
+                        <p>Rapid certification for a boutique wealth management firm to meet client due diligence
+                            requirements.</p>
+                        <div class="case-meta">
+                            <span>Services: Cyber Essentials Plus</span>
+                            <span>Duration: 3 weeks</span>
+                        </div>
+                        <a href="#" class="case-link">Read full case study →</a>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="manufacturing">
+                    <img src="images/placeholder-general.svg" alt="IoT Security" class="case-image">
+                    <div class="case-content">
+                        <h3>Industrial IoT Security Assessment</h3>
+                        <p>Security review of connected manufacturing systems for a precision engineering company.</p>
+                        <div class="case-meta">
+                            <span>Services: IoT Security, Network Assessment</span>
+                            <span>Duration: 4 weeks</span>
+                        </div>
+                        <a href="#" class="case-link">Read full case study →</a>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="healthcare">
+                    <img src="images/placeholder-healthcare.svg" alt="Pharma Supply Chain" class="case-image">
+                    <div class="case-content">
+                        <h3>Pharmaceutical Supply Chain Security</h3>
+                        <p>End-to-end security assessment for a cold chain logistics provider serving vaccine
+                            distribution.</p>
+                        <div class="case-meta">
+                            <span>Services: Supply Chain Assessment, ISO 27001</span>
+                            <span>Duration: 8 weeks</span>
+                        </div>
+                        <a href="#" class="case-link">Read full case study →</a>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="finance">
+                    <img src="images/placeholder-fintech.svg" alt="Insurance SOC" class="case-image">
+                    <div class="case-content">
+                        <h3>Insurance Broker 24/7 SOC</h3>
+                        <p>Fully managed security operations centre for a high-street insurance broker with 50+
+                            branches.</p>
+                        <div class="case-meta">
+                            <span>Services: Managed Security, Incident Response</span>
+                            <span>Duration: Ongoing</span>
+                        </div>
+                        <a href="#" class="case-link">Read full case study →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Client Feedback</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <blockquote class="testimonial-card">
+                    <p>"Invara Digital transformed our security posture completely. Their Cyber Essentials Plus
+                        certification support was meticulous, and their penetration testing identified critical
+                        vulnerabilities our previous provider missed."</p>
+                    <footer>
+                        <strong>James Mitchell</strong>
+                        <span>CTO, FinFlow Solutions Ltd</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"The 24/7 managed security service gives us complete peace of mind. Their Edinburgh-based SOC
+                        responds to threats faster than any offshore provider we've used."</p>
+                    <footer>
+                        <strong>Sarah Chen</strong>
+                        <span>Head of IT, NorthMed Healthcare</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"Professional, thorough, and deeply knowledgeable about UK data protection requirements. Invara
+                        guided us through ISO 27001 certification seamlessly."</p>
+                    <footer>
+                        <strong>Robert Davidson</strong>
+                        <span>Managing Director, Highland Logistics</span>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Ready to become our next success story?</h2>
+                <p>Book a free consultation to discuss your security challenges.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.svg" alt="Invara Digital Logo">
+                        <span class="logo-text">Invara Digital</span>
+                    </a>
+                    <p class="footer-tagline">Enterprise-grade cyber security for UK businesses.</p>
+                    <div class="footer-address">
+                        <strong>Headquarters</strong>
+                        <address>
+                            5 South Charlotte Street<br>
+                            Edinburgh, EH2 4AN<br>
+                            United Kingdom
+                        </address>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#pentest">Penetration Testing</a></li>
+                        <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                        <li><a href="services.html#cyberessentials">Cyber Essentials</a></li>
+                        <li><a href="services.html#iso27001">ISO 27001</a></li>
+                        <li><a href="services.html#managed">Managed Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2026 Invara Digital Ltd. All rights reserved.
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">ISO 27001</span>
+                    <span class="badge">NCSC Cyber Advisor</span>
+                    <span class="badge">IASME Partner</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

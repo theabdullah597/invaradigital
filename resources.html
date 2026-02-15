@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cyber security resources, guides, and insights from Invara Digital - Helping UK businesses stay informed about the latest threats and compliance requirements.">
+    <title>Resources | Invara Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.svg" alt="Invara Digital Logo">
+                <span class="logo-text">Invara Digital</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="nav-link">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#pentest">Penetration Testing</a></li>
+                        <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                        <li><a href="services.html#cyberessentials">Cyber Essentials</a></li>
+                        <li><a href="services.html#iso27001">ISO 27001</a></li>
+                        <li><a href="services.html#managed">Managed Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="resources.html" class="nav-link active">Resources</a></li>
+                <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">Resources</span>
+            <h1>Security Insights & Guides</h1>
+            <p>Expert knowledge to help protect your business</p>
+        </div>
+    </section>
+
+    <!-- Featured Resource -->
+    <section class="featured-resource">
+        <div class="container">
+            <div class="resource-hero">
+                <div class="resource-content">
+                    <span class="resource-type">Free Guide</span>
+                    <h2>The UK SME Cyber Security Handbook 2026</h2>
+                    <p>Everything UK business owners need to know about protecting their organisation from cyber
+                        threats. Includes Cyber Essentials checklist, compliance requirements, and incident response
+                        templates.</p>
+                    <ul class="resource-features">
+                        <li>✓ 50-page comprehensive guide</li>
+                        <li>✓ Cyber Essentials preparation checklist</li>
+                        <li>✓ Incident response templates</li>
+                        <li>✓ Vendor assessment questionnaire</li>
+                    </ul>
+                    <p class="resource-availability"><strong>Status:</strong> Updated for 2026 - Available upon request.
+                    </p>
+                </div>
+                <div class="resource-visual">
+                    <div class="guide-mockup">
+                        <div class="mockup-spine"></div>
+                        <div class="mockup-cover">
+                            <span class="mockup-badge">2026 Edition</span>
+                            <h3>SME Cyber Security Handbook</h3>
+                            <span class="mockup-author">Invara Digital</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Grid -->
+    <section class="resources-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Latest Content</span>
+                <h2 class="section-title">Browse Resources</h2>
+            </div>
+
+            <div class="resources-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="guides">Guides</button>
+                <button class="filter-btn" data-filter="blog">Blog</button>
+                <button class="filter-btn" data-filter="webinars">Webinars</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+
+            <div class="resources-grid">
+                <article class="resource-card" data-category="guides">
+                    <img src="images/placeholder-general.svg" alt="Cyber Essentials Guide" class="resource-image">
+                    <div class="resource-card-content">
+                        <div class="resource-meta">
+                            <span class="resource-date">15 Jan 2026</span>
+                            <span class="resource-read">10 min read</span>
+                        </div>
+                        <h3>Preparing for Cyber Essentials: A Step-by-Step Guide</h3>
+                        <p>Everything you need to know to achieve your first Cyber Essentials certification, from
+                            initial assessment to final submission.</p>
+                        <p class="resource-status">Full article coming soon.</p>
+                    </div>
+                </article>
+
+                <article class="resource-card" data-category="blog">
+                    <img src="images/placeholder-general.svg" alt="Threat Landscape" class="resource-image">
+                    <div class="resource-card-content">
+                        <div class="resource-meta">
+                            <span class="resource-date">10 Jan 2026</span>
+                            <span class="resource-read">5 min read</span>
+                        </div>
+                        <h3>2026 Cyber Threat Landscape: What UK Businesses Should Know</h3>
+                        <p>Analysis of emerging threats targeting UK SMEs and practical steps to protect your
+                            organisation.</p>
+                        <p class="resource-status">Full article coming soon.</p>
+                    </div>
+                </article>
+
+                <article class="resource-card" data-category="webinars">
+                    <img src="images/placeholder-general.svg" alt="ISO 27001 Webinar" class="resource-image">
+                    <div class="resource-card-content">
+                        <div class="resource-meta">
+                            <span class="resource-date">25 Jan 2026</span>
+                            <span class="resource-type">Live Event</span>
+                        </div>
+                        <h3>ISO 27001:2022 Changes Explained</h3>
+                        <p>Join our consultants as they walk through the key changes in the updated ISO 27001 standard
+                            and what they mean for your certification.</p>
+                        <p class="resource-status">Registration closed. Recording available on request.</p>
+                    </div>
+                </article>
+
+                <article class="resource-card" data-category="tools">
+                    <img src="images/placeholder-general.svg" alt="Risk Calculator" class="resource-image">
+                    <div class="resource-card-content">
+                        <div class="resource-meta">
+                            <span class="resource-date">Free Tool</span>
+                        </div>
+                        <h3>Security Risk Assessment Calculator</h3>
+                        <p>Quickly assess your organisation's security risk level with our interactive calculator. Get
+                            instant recommendations.</p>
+                        <p class="resource-status">Tool currently under maintenance.</p>
+                    </div>
+                </article>
+
+                <article class="resource-card" data-category="blog">
+                    <img src="images/placeholder-general.svg" alt="Penetration Testing" class="resource-image">
+                    <div class="resource-card-content">
+                        <div class="resource-meta">
+                            <span class="resource-date">5 Jan 2026</span>
+                            <span class="resource-read">7 min read</span>
+                        </div>
+                        <h3>Why Your Penetration Test Might Be Worthless</h3>
+                        <p>Common pitfalls in penetration testing engagements and how to ensure you get real value from
+                            your security investment.</p>
+                        <p class="resource-status">Full article coming soon.</p>
+                    </div>
+                </article>
+
+                <article class="resource-card" data-category="guides">
+                    <img src="images/placeholder-general.svg" alt="Incident Response" class="resource-image">
+                    <div class="resource-card-content">
+                        <div class="resource-meta">
+                            <span class="resource-date">20 Dec 2025</span>
+                            <span class="resource-read">15 min read</span>
+                        </div>
+                        <h3>Incident Response Planning for SMEs</h3>
+                        <p>A practical guide to creating an incident response plan that actually works when you need it
+                            most.</p>
+                        <p class="resource-status">Full article coming soon.</p>
+                    </div>
+                </article>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.svg" alt="Invara Digital Logo">
+                        <span class="logo-text">Invara Digital</span>
+                    </a>
+                    <p class="footer-tagline">Enterprise-grade cyber security for UK businesses.</p>
+                    <div class="footer-address">
+                        <strong>Headquarters</strong>
+                        <address>
+                            5 South Charlotte Street<br>
+                            Edinburgh, EH2 4AN<br>
+                            United Kingdom
+                        </address>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#pentest">Penetration Testing</a></li>
+                        <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                        <li><a href="services.html#cyberessentials">Cyber Essentials</a></li>
+                        <li><a href="services.html#iso27001">ISO 27001</a></li>
+                        <li><a href="services.html#managed">Managed Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2026 Invara Digital Ltd. All rights reserved.
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">ISO 27001</span>
+                    <span class="badge">NCSC Cyber Advisor</span>
+                    <span class="badge">IASME Partner</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
